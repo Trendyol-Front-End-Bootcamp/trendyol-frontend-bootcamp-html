@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms!!!</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+<body>
+    <main>
+        Bilgilerinizi başarıyla gönderdiniz!<br>  
+
+        <p>
+            Adınız: <span id="name"></span><br>
+            E-Postanız: <span id="email"></span><br>
+        </p>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const name = params.get('name');
+        const email = params.get('email');
+
+        const nameEl = document.getElementById('name');
+        const emailEl = document.getElementById('email');
+
+        nameEl.innerHTML = name;
+        emailEl.innerHTML = email;
+    </script>
+</body>
+</html>

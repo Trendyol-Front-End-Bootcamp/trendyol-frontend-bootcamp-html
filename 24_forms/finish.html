@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms!!!</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+<body>
+    <main>
+        <form action="success.html" method="GET">
+            <label for="name">Ad</label>
+            <input type="text" name="name" id="name">
+
+            <label>E-Posta</label>
+            <input type="email" name="email" required placeholder="name@example.com">
+
+            <label for="password">Şifre</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="search">Arama</label>
+            <input type="search" id="search" placeholder="Ara...">
+
+            <label for="phone">Tel. No.</label>
+            <input type="tel" id="phone">
+
+            <label for="color">Renk</label>
+            <input type="color" id="color">
+
+            <label for="date">Tarih</label>
+            <input type="date" id="date">
+
+            <label for="file">Dosya</label>
+            <input type="file" id="file" accept="image/*" multiple>
+
+            <label for="description">Açıklama</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+            <div>
+                <label for="checkbox">Checkbox</label>
+                <input type="checkbox" id="checkbox" checked>
+            </div>
+
+            <label for="select">İl Seçiniz</label>
+            <select name="select" id="select">
+                <option value="İstanbul">İstanbul</option>
+                <option value="Ankara">Ankara</option>
+                <option value="İzmir">İzmir</option>
+            </select>
+
+            <fieldset>
+                <legend>İl Seçiniz</legend>
+
+                <input type="checkbox" id="İstanbul" value="İstanbul" name="city">
+                <label for="İstanbul">İstanbul</label>
+            
+                <input type="checkbox" id="Ankara" value="Ankara" name="city">
+                <label for="Ankara">Ankara</label>
+
+                <input type="checkbox" id="İzmir" value="İzmir" name="city">
+                <label for="İzmir">İzmir</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>İlçe Seçiniz</legend>
+
+                <input type="radio" id="Bakırköy" value="Bakırköy" name="district">
+                <label for="Bakırköy">Bakırköy</label>
+            
+                <input type="radio" id="Bahçelievler" value="Bahçelievler" name="district">
+                <label for="Bahçelievler">Bahçelievler</label>
+
+                <input type="radio" id="Kadıköy" value="Kadıköy" name="district">
+                <label for="Kadıköy">Kadıköy</label>
+            </fieldset>
+            
+            <div>
+                <button type="submit">GÖNDER!!!</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
